@@ -1,0 +1,26 @@
+
+<form action="" name="form-login">
+<span>
+    Usuario
+</span>
+<hr>
+<div class="p-input-filled">
+    <i class="pi pi-user" style="font-size: 1rem"></i>
+    <input  type="text" pInputText name="usuario" [(ngModel)]="usuario" required ng-minlength=3 
+        ng-required="true"> 
+
+</div>
+<hr>
+
+<span>
+    Contraseña
+</span>
+<hr>    
+<div class="p-input-filled">
+    <i class="pi pi-key" style="font-size: 1rem"></i>
+    <input  type="password" pInputText [(ngModel)]="password"> 
+</div>
+<hr>
+<button pButton type="button" label="Ingresar" (click)="login()"></button>
+<hr>
+</form>
